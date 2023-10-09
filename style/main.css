@@ -1,0 +1,337 @@
+/* при обнулении или настройке css можно использовать этот файл или скопировать код из него. 
+Чтобы верстка норм отображалась и не всплывали баги.
+https://necolas.github.io/normalize.css/ */
+
+/*obs4ie stili*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    max-width: 1440px;
+    height: 768px;
+    margin: 0 auto;
+    /* padding: 40px 0; */
+    padding-top: 41px;
+    padding-bottom: 71px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-image: url(../img/bg.png);
+}
+
+.logo {
+    width: 102px;
+    height: 23px;
+    margin: 0 auto;
+    background-image: url(../img/projeco-logo.svg);
+    /* border: 1px solid pink; */
+}
+.header_h1andText {
+    
+    /* border: 1px solid pink; */
+
+}
+.headerTitleH1 {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    letter-spacing: 5.70937px;
+    line-height: 70px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    
+}
+
+.headerText {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.scrolldown {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3.7px;
+    line-height: 13px;
+    /* border: 1px solid pink; */
+}
+
+
+
+
+/*section navbar*/
+.navbar {
+    height: 65px;
+    border: 1px solid #E6E6E6;
+}
+
+.navbar_logoBlack {
+    width:80px;
+    height:18px;
+    margin-top: 24px;
+    background-image: url(../img/projeco-logo-black.svg);
+}
+.navbar_menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.menu_span {
+    margin-left: 5px;
+    color: #48555B;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.09091px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+/*razdel Our Story*/
+
+.story{
+    text-align: center;
+    padding: 50px 0; /* paddings from top and bottom 50px */
+    
+}
+.story_left{
+        max-width: 398px;
+        margin-right: 50px;
+        text-align: left;
+    
+}
+
+
+
+.story_title_2{
+    color: #48555B;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    /* padding: 30px 0; */
+}
+
+.story_title_3{
+    color: #48555B;
+}
+
+.line{
+    width: 50px;
+    height: 2px;
+    border: 1px solid #00A4E5;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.accent-color{
+    
+}
+.story_text{
+    color: #48555B;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+
+}
+.story_right{
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+.story_item{
+    padding: 15px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+}
+.story_item:nth-child(1) {
+    background-image: url(../img/we_plan.png);
+}
+.story_item:nth-child(2) {
+    background-image: url(../img/we_manage.png);
+}
+.story_item:nth-child(3) {
+    background-image: url(../img/we_build.png);
+    margin-right: 0px;
+}
+
+/*section our capabilities*/
+
+.capabilities {
+    text-align: center;
+    padding: 50px 0;
+
+}
+.capabilities_container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+.ourCapabilities {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    /* border: solid pink 2px; */
+}
+    .h2AndLine {
+        width: 210px;
+        height: 40px;
+        text-align: left;
+        
+        /* border-bottom: 2px solid blue; */
+        
+        /* border: solid pink 2px; */
+    }
+        
+
+        .ourCapabilities_title_2{
+            color: #48555B;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 2.31px;
+            line-height: 21px;
+            margin-top: 0px;
+            
+        }
+
+
+
+        .capabilities_line{
+            width: 50px;
+            height: 2px;
+            margin-top: 15px;
+            border: 1px solid #00A4E5;
+            
+        }
+
+.textAndButton {
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.capabilities_text {
+    width: 405px;
+    height: 38px;
+    text-align: left;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555B;
+    /* border: solid pink 2px; */
+    
+}
+.capabilitiesButton {
+    width: 150px;
+    height: 40px;
+    margin-left: 32px;
+    padding-top: 11px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    background-color: #00A4E5;
+
+}
+.capabilitiesCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 295px;
+    height: 330px;
+    text-align: left;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 23px;
+    padding-right: 23px;
+    
+    border: 2px solid #E6E6E6;
+}
+
+.capabilitiesH3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #48555B;
+}
+
+
+
+/*@media*/
+ @media screen and (max-width:1440px){ /* свойства цсс до указанной ширины */
+    .container{
+        
+        padding: 0 50px;
+        
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        
+        padding: 0 15px;
+         flex-wrap: wrap; /*флекс элементы располагаются друг под другом */
+        
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    .story_right{
+        flex-wrap: wrap;
+    }
+    .story_item{
+        margin-bottom: 20px;
+    }
+
+    .story_item:nth-child(3) {
+        
+        margin-bottom: 0px;
+    }
+}
+
+
+
