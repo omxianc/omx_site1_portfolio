@@ -13,10 +13,10 @@
             <h1 class="headerTitleH1">PARTNER WITH KONSTUCT</h1>
             <p class="headerText">An award-winning construction management firm</p>
         </div>
-        <div class="scrolldown">scroll down</div>
+        <a href="#navbar"><div class="scrolldown">scroll down</div></a>
     </section>
 
-    <section class="navbar">
+    <section id="navbar" class="navbar">
         <div class="container">
             <div class="navbar_logoBlack"></div>
             <div class="navbar_menu">
@@ -26,6 +26,13 @@
                 <span class="menu_span">work</span>
                 <span class="menu_span">contact</span>
                 
+            </div>
+            <div class="burger_menu">
+                <div class="burger_icon">
+                    <div class="burger_icon_line"></div>
+                    <div class="burger_icon_line"></div>
+                    <div class="burger_icon_line"></div>
+                </div>
             </div>
 
         </div>
@@ -84,6 +91,103 @@
             </div>
         </div>
     </section>
+
+    <section class="amazing">
+        <h1 class="amazingH1">Want to build<br> something amazing?</h1>
+        <div class="amazingButton">get in touch</div>        
+    </section>
+
+    <section class="signup">
+        <div class="container">
+            <div class="NewsletterSignup">Newsletter Signup</div>
+            <div class="signupInputAndButton">
+                <input class="SignupInput" type="text">
+                <div class="signupButton">signup</div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="company">
+                <p class="footerTitles">company</p>
+                <img class="konstructLogo" src="../img/projeco-logo.svg" alt="">
+                <p class="companyText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+            <div class="links">
+                <p class="footerTitles">links</p>
+                <div class="linksList">
+                    <span class="link"><a href="#">home</a></span>
+                    <span class="link"><a href="#">about</a></span>
+                    <span class="link"><a href="#">services</a></span>
+                    <span class="link"><a href="#">projects</a></span>
+                    <span class="link"><a href="#">contact us</a></span>
+                    <span class="link"><a href="#">faq</a></span>
+                    <span class="link"><a href="#">terms</a></span>
+                    <span class="link"><a href="#">careers</a></span>
+                    <span class="link"><a href="#">blog</a></span>
+                    <span class="link"><a href="#">partners</a></span>
+                    <span class="link"><a href="#">news</a></span>
+
+                </div>
+            </div>
+            <div class="contactUs">
+                <p class="footerTitles">contact us</p>
+                <p class="contactText">213 Baker Street <br> Oriel City Kountry <br> 7000 KNW, <br> Kountry Name</p>
+                <p class="contactText">+23 994 233 4022</p>
+                <p class="contactText">info@konstruct.com</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialIcon" src="../img/facebook.svg" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img class="socialIcon" src="../img/twitter.svg" alt=""></a>
+                <a href="https://www.google.com/" target="_blank"><img class="socialIcon" src="../img/google.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright">
+        <div class="containerCopyright">
+            <p class="copyrghtText">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+        </div>
+    </section>
+
+
+
+<!-- Модальное окно для мобильного меню и скрипт для него -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="mobile_menu">
+            <span class="modalmenu_span">home</span>
+            <span class="modalmenu_span">about</span>
+            <span class="modalmenu_span">services</span>
+            <span class="modalmenu_span">work</span>
+            <span class="modalmenu_span">contact</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    const burgerIcon = document.querySelector('.burger_icon');
+    const modal = document.getElementById('modal');
+    const closeButton = document.getElementsByClassName('close')[0];
+
+    burgerIcon.addEventListener('click', () => {
+    modal.style.display = 'block'; // Отображаем модальное окно при клике на бургер-иконку
+    });
+
+    closeButton.addEventListener('click', () => {
+    modal.style.display = 'none'; // Скрываем модальное окно при клике на кнопку закрытия
+    });
+
+    window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none'; // Скрываем модальное окно при клике вне него
+    }
+    });
+</script>
     
 </body>
 </html>
